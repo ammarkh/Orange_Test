@@ -1,0 +1,13 @@
+a features will be added to project 
+
+
+-NavBar > with all related animation Css,js
+
+- tables
+
+-charts
+
+- dropdown 
+
+-responsive
+
