@@ -1,13 +1,26 @@
 a features will be added to project 
 
 
--NavBar > with all related animation Css,js
+please when you get task use  //task pending inside it for other user not work on it 
 
-- tables
 
--charts
 
-- dropdown 
+-NavBar > with all related animation Css,js   css, js
+
+- tables css, javascript
+
+- dropdown css, javascript
 
 -responsive
+
+-message if have a new animation 
+
+- box css,js
+
+- button like new design search button , previous next css,js 
+
+- text box new design css 
+
+
+
 
