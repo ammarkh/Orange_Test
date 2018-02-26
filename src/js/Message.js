@@ -8,6 +8,7 @@
         function msg(msg) {
             if (typeof msg === 'string') {
                 this.msg = msg;
+
             }
 
         };
