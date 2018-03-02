@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./dist/js/Orange.js"></script>
+    <script src="./dist/js/model.js"></script>
+    <script src="./dist/js/validation.js"></script>
+    <link rel="stylesheet" href="./dist/Css/tooltip.css">
+    <style type="text/css">
+        .btn {
+            border: 1px solid rgb(2, 115, 240);
+            color: white;
+            background-color: rgb(2, 115, 240);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            font-family: verdana, sans-serif;
+        }
+        
+        .btn:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .add-item {
+            border: 1px solid lightgray;
+            padding: 12px 24px;
+            -webkit-transition: visibility 0.5s;
+            transition: visibility 0.5s;
+        }
+        
+        .add-item input[type=text] {
+            color: darggray;
+            padding: 5px;
+            font-family: arial;
+            font-size: 18px;
+            border-radius: 4px;
+            border: 2px solid gray;
+            width: 34%;
+        }
+        
+        .add-item input[type=text]:focus {
+            outline: none;
+        }
+        
+        .tb .row .col input[type=text][readonly="true"] {
+            background: white;
+            text-align: center;
+            border: none;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class='tp tp-text'>
+        welcome to you
+        <div class=''>welcome </div>
+    </div>
+
+    <button id='btn1' class="btn" onclick="addFormsShow()">
+		add New Item 
+	</button>
+    <br/><br/>
+    <input type="text" name="" id="inp1" onchange="callFun()">
+
+    <div class="add-item" style="visibility: hidden;">
+        Name : <input type="text" name=""> Name : <input type="text" name=""><br><br> Name : <input type="text" name=""> Name : <input type="text" name=""><br><br> Name : <input type="text" name=""><br><br>
+
+        <button class="btn" onclick="op()">Submit</button>
+        <button class="btn" onclick="addFormshide()">Cancel</button>
+    </div>
+    <br/><br/>
+
+
+    <script type="text/javascript">
+        function addFormsShow() {
+            var x = document.getElementsByClassName('add-item')[0];
+            x.removeAttribute('style');
+
+        }
+
+        function addFormshide() {
+            var x = document.getElementsByClassName('add-item')[0];
+            x.setAttribute('style', 'visibility:hidden;display:none');
+        }
+        /*
+        			function car (message) {
+        				// body
+        				this.message = message;
+        				console.log(message);
+        			};
+        				car.prototype.speed = function (message) {
+        					console.log(message);
+        					return this;
+        				};
+
+        				car.prototype.count = function (message) {
+        					console.log(1000);
+        					return this;
+        				};
+        			
+
+        			var Orange = function (msg){
+        				return new car(msg);
+        			};
+        			*/
+        /*
+        Orange('eld').count('els').speed('asw');
+
+        console.log(window);
+
+        console.log(window.model().showModel('mmsd'));
+        */
+        // Orange(btn1).checkParamType();
+
+        /*
+        (function() {
+            if (document.readyState == "loading")
+                alert('loading');
+            if (document.readyState == "interactive") {
+                alert('d');
+            }
+            if (document.readyState == "complete")
+                console.log('page is ready');
+
+        })();
+    */
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+            console.log("DOM fully loaded and parsed");
+        });
+    </script>
+
+</body>
+
+</html>

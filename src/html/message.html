@@ -5,29 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/Orange.css">
-    <script src="../js/Orange.js"></script>
-    <script src="../js/Message.js"></script>
+
+    <link rel="stylesheet" href="./Css/Orange.css" />
+    <script src="./js/Orange.js"></script>
+    <script src="./js/Message.js"></script>
+
     <title>Document</title>
 </head>
 
 <body>
-    <button class='bn bn-danger' onclick="showMessage()">show message</button>
-    <button class='bn bn-nice' onclick='hideMessage()'>close message</button>
+
+    <button class="bn bn-navy" onclick="showMsg()">show alert navy</button>
+    <button class="bn bn-danger" onclick="closeMessage()">Close </button>
+    <br>
+
+    <div id="msg1" class="o-msg o-msg-navy o-msg-md o-msg-hidden" data-close="x"></div>
 
 
-    <div id='msg1' class="o-msg o-msg-danger o-msg-hidden"></div>
 
-
-    <script type='text/javascript'>
-        function showMessage() {
-            O().message('message text').show('msg1');
+    <script>
+        /*
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            the best syntax is Orange(id).message('id').show('message');
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        */
+        function showMsg() {
+            Orange().message('this text will be define as text in message <big> you will find after adit data struct </big> ').show('msg1');
         }
 
-        function hideMessage() {
-            O().message().hide('msg1');
+
+        console.log(Orange());
+
+        function closeMessage() {
+            Orange().message().hide('msg1');
         }
     </script>
+
 </body>
 
 </html>

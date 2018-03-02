@@ -1,10 +1,37 @@
-/**this is a main module O, Orange Module */
+//var Orange = window;
 
-O = Orange = function(el) {
+
+
+
+// window.Orange.msg = msg;
+//var Orange = window.Orange;
+
+//var O = window.Orange;
+
+
+
+/**this library will content text, div, button, model , responsive , navbar, check box, radio button, socity icon, alertMessage, box, background, validation, chart , form ,calender, hint , panel
+ * 
+ * table, auto complete , load , css, event , occordion , ajax ,json, event, tohtml, to text
+ */
+
+/**
+ * var Orange = (function(){
+
+function Orange  (message){
+  // constructor  will be orange (message) this is a call
+  
+
+ */
+
+O = Orange = function(el = '') {
 
     function Orange(el) {
         this.el = el;
     }
+
+    Orange.constructor = Orange;
+    Orange.__proto__ = Orange.prototype;
 
     //model function 
     Orange.prototype.model = function(el) {
@@ -19,6 +46,13 @@ O = Orange = function(el) {
         this.message = window.message(msg);
         return this.message;
     };
+
+    Orange.prototype.tooltip = function(message, el) {
+        var element = this.checkParamType(el);
+        this.tooltip = window.tooltip(message, element);
+        return this.tooltip;
+    };
+
 
     Orange.prototype.checkParamType = function() {
 
@@ -38,6 +72,7 @@ O = Orange = function(el) {
             return this.el;
         }
 
+        return Orange;
     };
 
     return new Orange(el);
